@@ -1,0 +1,42 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+@keyframes hide {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@mixin hompepageLoader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  background: rgba(0, 0, 0, 1);
+  animation: hide 2s forwards;
+  .turning-border {
+    display: flex;
+    position: relative;
+    z-index: 6;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 9px solid $bgdColor2;
+    border-top: 9px solid white;
+    animation: spin 0.5s linear 1 forwards;
+  }
+}

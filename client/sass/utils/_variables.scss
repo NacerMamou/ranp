@@ -1,0 +1,58 @@
+// Color variables
+
+//Backgrounds
+$color--1: #1ebab7;
+// $color--2: #ecbe00;
+$color--2: #72e191;
+$color--3: #b900af;
+$color--4: #ebe3f9;
+$color--5: #7e00b6;
+$color--6: #137691;
+$color--7: #29003c;
+$color--8: #f9efe5;
+$color--9: #f5f5f5;
+$color--10: #e01b6c;
+
+$border-color--1: #f2f2f2;
+
+$icon-background--1: #1ebab7;
+$icon-background--2: #ecbe00;
+
+$background-color--1: #f5f5f5;
+$background-color--2: #272636;
+$background-color--3: #1f222d;
+
+$circle-diameter: 20vw;
+$topic-diameter: 4.5vw;
+
+$topic-radius: ($topic-diameter/2);
+$position-type--1: -($topic-radius);
+$position-type--2: ($circle-diameter/2) - ($topic-radius);
+$position-type--3: $circle-diameter - ($topic-radius);
+$position-type--4: ($topic-diameter * 3) + 1vw;
+$position-type--5: 0.2vw;
+$position-type--6: 1vw;
+
+$animation-duration: 5s;
+
+// Medium Screen
+$circle-diameter-md: 30vw;
+$topic-diameter-md: 7.5vw;
+$topic-radius-md: ($topic-diameter-md/2);
+$position-type--1-md: -($topic-radius-md);
+$position-type--2-md: ($circle-diameter-md/2) - ($topic-radius-md);
+$position-type--3-md: $circle-diameter-md - ($topic-radius-md);
+$position-type--4-md: ($topic-diameter-md * 3);
+$position-type--5-md: 0.2vw;
+$position-type--6-md: 1vw;
+
+// Medium Screen
+$circle-diameter-s: 50vw;
+$topic-diameter-s: 12.2vw;
+$topic-radius-s: ($topic-diameter-s/2);
+$position-type--1-s: -($topic-radius-s);
+$position-type--2-s: ($circle-diameter-s/2) - ($topic-radius-s);
+$position-type--3-s: $circle-diameter-s - ($topic-radius-s);
+$position-type--4-s: ($topic-diameter-s * 3);
+$position-type--5-s: 0.2vw;
+$position-type--6-s: 1vw;

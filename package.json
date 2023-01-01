@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./client/main.scss:./client/css/main.css --style expanded",
+    "prefix": "postcss ./client/css/main.css --use autoprefixer -d ./client/css/prefixed",
+    "dev-server": "nodemon ranmamou.server.js --prefix server",
+    "start-server": "node ranmamou.server.js --prefix server",
+    "updateBrowserList": "npx browserslist@latest --update-db"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

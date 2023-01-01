@@ -1,0 +1,115 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6vw 34vw;
+  width: 100%;
+  background-color: $background-color--2;
+  color: white;
+  & h2 {
+    display: flex;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & input,
+    textarea {
+      display: flex;
+      width: 100%;
+      background-color: $background-color--3;
+      color: white;
+      border-radius: 0.2vw;
+      margin-bottom: 0.4vw;
+      border: 0.1px solid white;
+    }
+    & input {
+      padding: 0.4vw;
+      outline: none;
+
+      &::placeholder {
+        font-size: 0.9vw;
+      }
+      &[type="submit"] {
+        font-size: 0.9vw;
+        text-align: right;
+        border: 0.1px solid white;
+        color: grey;
+
+        &:hover {
+          background-color: $color--10;
+          color: white;
+        }
+      }
+    }
+
+    & textarea {
+      outline: none;
+      padding: 0.4vw;
+      font-size: 0.9vw;
+    }
+  }
+
+  @media all and (max-width: 1025px) {
+    padding: 4vw 20vw;
+    & h2 {
+      font-size: 4vw;
+      margin-bottom: 3vw;
+    }
+    .contact-form {
+      & input,
+      textarea {
+        border-radius: 0.3vw;
+        margin-bottom: 0.6vw;
+      }
+      & input {
+        padding: 0.8vw;
+        &::placeholder {
+          font-size: 1.8vw;
+        }
+        &[type="submit"] {
+          font-size: 1.8vw;
+          &:hover {
+          }
+        }
+      }
+      & textarea {
+        font-size: 1.8vw;
+      }
+    }
+  }
+
+  @media all and (max-width: 577px) {
+    padding: 12vw 6vw;
+    & h2 {
+      font-size: 7vw;
+      margin-bottom: 10vw;
+    }
+    .contact-form {
+      & input,
+      textarea {
+        border-radius: 0.3vw;
+        margin-bottom: 1.5vw;
+      }
+      & input {
+        padding: 1.5vw;
+        &::placeholder {
+          font-size: 3.8vw;
+        }
+        &[type="submit"] {
+          font-size: 3.8vw;
+          padding: 2vw;
+          &:hover {
+          }
+        }
+      }
+      & textarea {
+        font-size: 3.8vw;
+        padding: 2vw;
+      }
+    }
+  }
+}
