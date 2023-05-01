@@ -28,14 +28,14 @@ app.post("/mailing", (req, res) => {
     auth: {
       //user: process.env.transporterEmail,
       //pass: process.env.transporterPassword,
-      user: "mamou.rania@outlook.fr",
-      pass: "raniaainar2"
+      user: "mamou.nacer@outlook.com",
+      pass: "Brother2020"
     },
   });
 
   const mailOptions = {
     //from: process.env.transporterEmail,
-    from: "mamou.rania@outlook.fr",
+    from: "mamou.nacer@outlook.com",
     to: "mamou.rania@proton.me",
     subject: `${req.body.name}   ${req.body.email}`,
     text: req.body.message,
